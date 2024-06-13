@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1025504506123",
+    "firebase_url": "https://kingdom-hearts-hub-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "kingdom-hearts-hub",
+    "storage_bucket": "kingdom-hearts-hub.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025504506123:android:b4ebbe8a701c5e3acaf20e",
+        "android_client_info": {
+          "package_name": "app.kh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025504506123-8htq8q3brd2lkfvl7vp8nuar4mus78tq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.kh",
+            "certificate_hash": "f0d564dbbecc908482cd46b14e5b38557f0f568f"
+          }
+        },
+        {
+          "client_id": "1025504506123-cjiia2f2752c56dpoh4eejt3l5va1s8i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXoKDQIG_Mkd-a6qWlCJwbmE8nibYCXL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025504506123-cjiia2f2752c56dpoh4eejt3l5va1s8i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

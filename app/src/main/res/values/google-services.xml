@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id"          translatable="false">1025504506123-cjiia2f2752c56dpoh4eejt3l5va1s8i.apps.googleusercontent.com</string>
+    <string name="firebase_database_url"          translatable="false">https://kingdom-hearts-hub-default-rtdb.europe-west1.firebasedatabase.app</string>
+    <string name="gcm_defaultSenderId"            translatable="false">1025504506123</string>
+    <string name="google_api_key"                 translatable="false">AIzaSyDXoKDQIG_Mkd-a6qWlCJwbmE8nibYCXL4</string>
+    <string name="google_app_id"                  translatable="false">1:1025504506123:android:b4ebbe8a701c5e3acaf20e</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDXoKDQIG_Mkd-a6qWlCJwbmE8nibYCXL4</string>
+    <string name="google_storage_bucket"          translatable="false">kingdom-hearts-hub.appspot.com</string>
+    <string name="project_id"                     translatable="false">kingdom-hearts-hub</string>
+</resources>
