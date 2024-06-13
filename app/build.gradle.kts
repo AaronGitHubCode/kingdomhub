@@ -34,7 +34,6 @@ android {
 dependencies {
     implementation("com.badlogicgames.gdx-controllers:gdx-controllers-core:2.0.1")
     implementation("com.badlogicgames.gdx-controllers:gdx-controllers-android:2.0.1")
-    implementation("com.badlogicgames.gdx:gdx-jnigen-loader:2.5.1")
     implementation("com.badlogicgames.gdx:gdx:1.12.1")
     implementation("com.firebaseui:firebase-ui-database:8.0.2")
     implementation("com.squareup.picasso:picasso:2.8")
