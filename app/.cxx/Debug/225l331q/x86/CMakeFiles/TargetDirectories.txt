@@ -1,0 +1,3 @@
+/home/aaron/AndroidStudioProjects/KingdomHeartsHub/app/.cxx/Debug/225l331q/x86/CMakeFiles/kh.dir
+/home/aaron/AndroidStudioProjects/KingdomHeartsHub/app/.cxx/Debug/225l331q/x86/CMakeFiles/edit_cache.dir
+/home/aaron/AndroidStudioProjects/KingdomHeartsHub/app/.cxx/Debug/225l331q/x86/CMakeFiles/rebuild_cache.dir

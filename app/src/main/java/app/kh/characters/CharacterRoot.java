@@ -1,5 +1,5 @@
 package app.kh.characters; 
-public class CharacterRoot{
+public final class CharacterRoot{
     private CharacterInfo info;
 
     private Character data;

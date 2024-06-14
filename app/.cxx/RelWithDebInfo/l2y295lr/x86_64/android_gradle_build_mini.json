@@ -1,0 +1,27 @@
+{
+  "buildFiles": [
+    "/home/aaron/AndroidStudioProjects/KingdomHeartsHub/app/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/home/aaron/Android/Sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/home/aaron/AndroidStudioProjects/KingdomHeartsHub/app/.cxx/RelWithDebInfo/l2y295lr/x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/home/aaron/Android/Sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/home/aaron/AndroidStudioProjects/KingdomHeartsHub/app/.cxx/RelWithDebInfo/l2y295lr/x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "kh::@6890427a1f51a3e7e1df": {
+      "artifactName": "kh",
+      "abi": "x86_64",
+      "output": "/home/aaron/AndroidStudioProjects/KingdomHeartsHub/app/build/intermediates/cxx/RelWithDebInfo/l2y295lr/obj/x86_64/libkh.so",
+      "runtimeFiles": []
+    }
+  }
+}

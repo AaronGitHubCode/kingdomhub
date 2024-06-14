@@ -21,8 +21,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 
-import com.google.firebase.FirebaseApp;
-
 import com.google.firebase.database.FirebaseDatabase;
 
 import app.kh.auth.LoginFragment;
@@ -46,7 +44,6 @@ public final class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        FirebaseApp.initializeApp(this);
         FirebaseDatabase.getInstance(getString(R.string.firebase_database_url));
 
         GoogleSignInAccount lastSignedAccount;

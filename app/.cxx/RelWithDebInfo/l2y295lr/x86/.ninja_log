@@ -1,0 +1,6 @@
+# ninja log v5
+0	14	1718346433767946576	CMakeFiles/kh.dir/kh.cpp.o	c999c8667355ff95
+15	30	1718346433782941099	/home/aaron/AndroidStudioProjects/KingdomHeartsHub/app/build/intermediates/cxx/RelWithDebInfo/l2y295lr/obj/x86/libkh.so	71d20a2535c0699b
+0	3	0	clean	b6d2b05b80541500
+1	262	1718361974534911012	CMakeFiles/kh.dir/kh.cpp.o	c999c8667355ff95
+267	337	1718361974608910346	/home/aaron/AndroidStudioProjects/KingdomHeartsHub/app/build/intermediates/cxx/RelWithDebInfo/l2y295lr/obj/x86/libkh.so	71d20a2535c0699b

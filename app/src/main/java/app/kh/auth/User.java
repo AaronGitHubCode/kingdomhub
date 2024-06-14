@@ -2,11 +2,29 @@ package app.kh.auth;
 
 import com.google.firebase.database.IgnoreExtraProperties;
 
+import lombok.Getter;
+import lombok.Setter;
+
 @IgnoreExtraProperties
+@Getter
 public final class User {
     private String username;
     private String email;
 
+    private Level level;
+
+    @IgnoreExtraProperties
+    @Getter @Setter
+    public static final class Level {
+        /*
+        * TODO: Algoritmo para obtener puntos de nivel necesarios según nivel usuario.
+        * */
+        private int levelNumber;
+        private int levelPoints;
+        private int nextLevelPoints;
+    }
+
+    @Getter
     private android.net.Uri photoUrl;
 
     public static final class Builder {
@@ -39,8 +57,6 @@ public final class User {
         }
     }
 
-    public User() {}
-
     public User(
             final String username,
             final String email,
@@ -49,17 +65,5 @@ public final class User {
         this.username = username;
         this.email = email;
         this.photoUrl = photoUrl;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public android.net.Uri getPhotoUrl() {
-        return photoUrl;
     }
 }

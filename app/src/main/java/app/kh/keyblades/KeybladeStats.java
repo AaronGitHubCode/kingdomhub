@@ -1,4 +1,8 @@
 package app.kh.keyblades;
 
-public class KeybladeStats {
+import lombok.Getter;
+
+@Getter
+public final class KeybladeStats {
+    private float strength;
 }

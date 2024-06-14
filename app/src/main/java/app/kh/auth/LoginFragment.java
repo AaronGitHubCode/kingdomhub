@@ -46,6 +46,10 @@ public final class LoginFragment extends Fragment {
 
     private final ActivityResultLauncher<Intent> startActivityForResult = registerForActivityResult(new StartActivityForResult(), result -> {});
 
+    /**
+     * Resultado obtenido al llamar al Intent de GoogleSignInClient.
+     * Devuelve la cuenta de usuario de Google con la que se quiere iniciar sesión si se realizó la operación correctamente.
+     * */
     private final ActivityResultLauncher<Intent> startGoogleActivityForResult = registerForActivityResult(new StartActivityForResult(), result -> {
         final Intent data = result.getData();
         final Task<GoogleSignInAccount> taskGoogleSignInAccount = GoogleSignIn.getSignedInAccountFromIntent(data);

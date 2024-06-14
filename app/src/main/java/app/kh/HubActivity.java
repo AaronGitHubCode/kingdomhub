@@ -7,7 +7,7 @@ import static app.kh.utils.ApplicationConstants.NOTIFICATION_UNIQUE_ID;
 import app.kh.utils.IAudioService;
 import app.kh.utils.INotificationService;
 
-import app.kh.ui.HubFragment;
+import app.kh.ui.fragment.HubFragment;
 
 import android.content.res.Resources;
 
@@ -18,14 +18,23 @@ import android.os.Bundle;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 
+import androidx.activity.OnBackPressedCallback;
+
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.core.app.NotificationCompat;
 
 import androidx.annotation.Nullable;
+
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.fragment.app.FragmentTransaction;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ * @author AaronGitHubCode
+ * @version pre-alpha.0.0.1
+ * */
 public final class HubActivity extends AppCompatActivity
 implements INotificationService, IAudioService {
     private NotificationManager notificationManager;
@@ -36,6 +45,16 @@ implements INotificationService, IAudioService {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        setSupportActionBar(findViewById(R.id.materialToolbar));
+
+        /**
+         * Inhabilitar botón de regreso.
+         * */
+        getOnBackPressedDispatcher().addCallback(new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {}
+        });
+
         final FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.hub_fragment_container, new HubFragment(), "hub");
         fragmentTransaction.commit();
@@ -43,6 +62,32 @@ implements INotificationService, IAudioService {
         notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         notificationManager.createNotificationChannel(new NotificationChannel(NOTIFICATION_ID, NOTIFICATION_NAME, NotificationManager.IMPORTANCE_DEFAULT));
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        final DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
+        final ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, findViewById(R.id.materialToolbar), R.string.open_toggle, R.string.close_toggle);
+        toggle.syncState();
+    }
+
+    /*
+    Implementar si la barra de tareas contiene botones.
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        final MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.toolbar_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        final int itemId = item.getItemId();
+
+        return true;
+    }
+     */
 
     @Override
     public void onNotify(String title, String content, int smallIcon, int largeIcon) {

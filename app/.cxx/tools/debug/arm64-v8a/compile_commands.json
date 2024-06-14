@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/aaron/AndroidStudioProjects/KingdomHeartsHub/app/.cxx/Debug/225l331q/arm64-v8a",
+  "command": "/home/aaron/Android/Sdk/ndk/27.0.11902837/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android26 --sysroot=/home/aaron/Android/Sdk/ndk/27.0.11902837/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dkh_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -o CMakeFiles/kh.dir/kh.cpp.o -c /home/aaron/AndroidStudioProjects/KingdomHeartsHub/app/src/main/cpp/kh.cpp",
+  "file": "/home/aaron/AndroidStudioProjects/KingdomHeartsHub/app/src/main/cpp/kh.cpp"
+}
+]
